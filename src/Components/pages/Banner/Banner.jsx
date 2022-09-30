@@ -93,7 +93,7 @@ const Banner = () => {
                                             <li>★</li>
                                             <li>★</li>
                                             <li>★</li>
-                                            {/* <li>★</li> */}
+                                            <li>★</li>
                                         </ul>
                                         <span class="seconds-text">Takes only 15 seconds</span>
                                     </div>

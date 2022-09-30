@@ -258,7 +258,7 @@
 
 /* Bottom Header Start */
 .bottom-header {
-  max-height: 105px;
+  max-height: 71px;
   position: relative;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
@@ -810,6 +810,11 @@ h1 {
 .logo1 {
   height: "45";
   width: "254";
+  transition: all 0.7s;
+}
+.logo1:hover{
+  transform: scale(1.05);
+  transition: all 0.7s;
 }
 /* Header Section End */
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import map from "../../Images/map-image.png";
+import map from "../../Images/mapimg.png";
 import first from "../../Images/250-250.png";
 const Footer = () => {
   return (
