@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import img1 from "../../Images/pak-flag.png";
 import logo1 from "../../Images/logo.svg";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header id="header">
@@ -13,7 +14,7 @@ const Header = () => {
             </a>
             <ul class="social-links">
               <li class="facebook-icon">
-                <a target="_blank" href="https://web.facebook.com/">
+                <a target="_blank" href="https://www.facebook.com/johny.prince.923/">
                   &nbsp;
                 </a>
               </li>
@@ -25,31 +26,31 @@ const Header = () => {
               <li class="gplus-icon">
                 <a
                   target="_blank"
-                  href="https://plus.google.com/u/0/105352487744736571045"
+                  href="https://plus.google.com/"
                 >
                   &nbsp;
                 </a>
               </li>
               <li class="youtube-icon">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://youtube.com/">
                   &nbsp;
                 </a>
               </li>
               <li class="linkedin-icon">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/company/13576611/"
+                  href="https://www.linkedin.com/in/muhammad-j-612a5423a/"
                 >
                   &nbsp;
                 </a>
               </li>
               <li class="tumblr-icon">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://tumbler.com/">
                   &nbsp;
                 </a>
               </li>
               <li class="pinterest-icon">
-                <a target="_blank" href="#">
+                <a target="_blank" href="https://pinterest.com/">
                   &nbsp;
                 </a>
               </li>
@@ -59,15 +60,15 @@ const Header = () => {
             <ul class="account-btn-holder">
               <li>
                 <span>What you takes iLinkedOn?</span>
-                <a class="signup-btn blue-btn-animated" href="Signup.html">
+                <Link class="signup-btn blue-btn-animated" to='/sign-up'>
                   Sign up
-                </a>
+                </Link>
               </li>
               <li>
                 <span>How you works iLinkedOn?</span>
-                <a class="signin-btn green-btn-animated" href="Signin.html">
+                <Link class="signin-btn green-btn-animated" to='/sign-in'>
                   Sign in
-                </a>
+                </Link>
               </li>
             </ul>
             <ul class="location-holder">
@@ -94,7 +95,7 @@ const Header = () => {
               </div>
               <div class="logo">
                 <a href="#">
-                  <img src={logo1} className="logo1" alt="ILinkedon" />
+                  <img src={logo1} className="logo1" alt="ILinkedon" to='/' />
                 </a>
               </div>
             </div>

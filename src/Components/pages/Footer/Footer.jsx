@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import map from "../../Images/mapimg.png";
 import first from "../../Images/250-250.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const Footer = () => {
                   </h5>
                   <ul>
                     <li>
-                      <a href="Contact.html">Help Us</a>
+                      <Link to='/contact'>Help Us</Link>
                     </li>
                     <li>
                       <a href="#">Support</a>
@@ -135,7 +136,7 @@ const Footer = () => {
             <div class="left-align">
               <ul class="social-links">
                 <li class="facebook-icon">
-                  <a target="_blank" href="https://web.facebook.com/">
+                  <a target="_blank" href="https://www.facebook.com/johny.prince.923/">
                     &nbsp;
                   </a>
                 </li>
@@ -147,28 +148,28 @@ const Footer = () => {
                 <li class="gplus-icon">
                   <a
                     target="_blank"
-                    href="https://plus.google.com/u/0/105352487744736571045"
+                    href="https://plus.google.com/"
                   >
                     &nbsp;
                   </a>
                 </li>
                 <li class="youtube-icon">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://youtube.com/">
                     &nbsp;
                   </a>
                 </li>
                 <li class="linkedin-icon">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://www.linkedin.com/in/muhammad-j-612a5423a/">
                     &nbsp;
                   </a>
                 </li>
                 <li class="tumblr-icon">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://tumbler.com/">
                     &nbsp;
                   </a>
                 </li>
                 <li class="pinterest-icon">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://pinterest.com/">
                     &nbsp;
                   </a>
                 </li>
@@ -182,14 +183,14 @@ const Footer = () => {
               </div>
             </div>
             <div class="right-align">
-              <p>Develop, Design &amp; Entrepreneur by</p>
+              <p>Develop, Design &amp; Entrepreneur by Muhammad Junaid</p>
               <a
                 target="_blank"
                 title="Develop, Design &amp; Entrepreneur by 20thFloor Techease"
                 class="twentyfloor-logo"
                 href="#"
               >
-                <img src={first} alt="20thfloor Logo" />
+                {/* <img src={first} alt="20thfloor Logo" /> */}
               </a>
             </div>
           </div>

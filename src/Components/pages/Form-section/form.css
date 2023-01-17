@@ -222,13 +222,13 @@
 .signup-form .columns-row .row label {
   display: block;
   pointer-events: none;
-  color: #fff;
+  color: red;
   font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
   margin: 0 0 5px;
   text-align: left;
   position: absolute;
   z-index: 9;
-  display: none;
+  /* display: none; */
 }
 .join-form .columns-row .row span {
   display: block;
@@ -236,12 +236,12 @@
   background-color: #f8f8f8;
   text-align: left;
 }
-#join-now-section .join-form .columns-row .row span:hover label,
+/* #join-now-section .join-form .columns-row .row span:hover label,
 #signin-page .signin-form .row span:hover label,
 #signup-page .signup-form .columns-row .row span:hover label,
 #contact-page .contact-page-form .row span:hover label {
   display: none !important;
-}
+} */
 .join-form ::-webkit-input-placeholder {
   color: #666;
   opacity: 0.3;

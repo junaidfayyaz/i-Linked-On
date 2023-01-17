@@ -1,0 +1,681 @@
+
+/*contact-us-page start*/
+#contact-page .contact-page-form .row span:hover label{
+	display: none !important;
+}
+#contact-page{
+	position: relative;
+	padding: 0 0 30px;
+	color: #fff;
+	font: normal 16px/20px "ralewayregular", Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.contact-page-map{
+	height: 350px;
+	position: relative;
+	z-index: 0;
+}
+.contact-page-map .contact-page-map-img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	vertical-align: top;
+	z-index: 99;
+}
+.contact-page-map .contact-page-map-img.hide-img{
+	display: none;
+}
+.contact-page-map iframe{
+	display: block;
+	height: 350px;
+	width: 100%;
+}
+#contact-page .holder{
+	max-width: 975px;
+	margin-top: -100px;
+}
+#contact-page .contact-page-form-holder{
+	overflow: hidden;
+	background-color: #fff;
+	padding: 50px 100px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4);
+	position: relative;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+#contact-page .contact-page-form-holder:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+#contact-page .custom-heading{
+	padding: 0 0 30px;
+	margin: 0 0 30px;
+	position: relative;
+}
+#contact-page .custom-heading:before{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	background-color: #e5e5e5;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#contact-page .custom-heading h2{
+	display: inline-block;
+	color: #116198;
+	font: normal 30px/33px "ralewaymedium", Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	margin: 0;
+	padding: 0 80px;
+	position: relative;
+}
+#contact-page .custom-heading h2::before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 3px;
+	width: 60px;
+	background-color: #116198;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+}
+#contact-page .custom-heading h2:after{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 3px;
+	width: 60px;
+	background-color: #116198;
+	position: absolute;
+	top: 50%;
+	left: auto;
+	right: 0;
+	margin-top: -1px;
+}
+.contact-page-form{
+	position: relative;
+	z-index: 99;
+}
+.contact-page-form:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.contact-page-form .columns{
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+.contact-page-form .row:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.contact-page-form .row{
+	margin: 0 0 28px;
+}
+.contact-page-form .row:last-child{
+	margin: 0;
+}
+.contact-page-form .columns .row label{
+	display: block;
+	color: #fff;
+	font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
+	text-align: left;
+	display: none;
+	z-index: 9;
+	position: absolute;
+	margin: 0 0 5px;
+}
+.contact-page-form .columns .row span,
+.contact-page-form .columns .row .general-inquiry{
+	display: block;
+	position: relative;
+	background-color: #f8f8f8;
+	text-align: left;
+}
+.contact-page-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #666;
+	opacity: 0.3;
+}
+.contact-page-form .row span input[type="text"],
+.contact-page-form .row span input[type="email"],
+.contact-page-form .row span input[type="password"]{
+	display: block;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	line-height: 18px;
+	color: #666;
+	padding: 7px 40px 7px 12px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right 11px;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn{
+	display: block;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	background-position: -170px -217px;
+	font-size: 14px;
+	color: #ccccdc;
+	height: 40px;
+	width: 100%;
+	line-height: 18px;
+	padding: 11px 40px 10px 12px;
+	position: relative;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn:hover,
+.contact-page-form .general-inquiry .general-inquiry-btn:hover{
+	border-color: #27aae1;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn.active,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected,
+.contact-page-form .general-inquiry .general-inquiry-btn.active,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected{
+	border-color: #8fd442;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn.active:hover,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:hover,
+.contact-page-form .general-inquiry .general-inquiry-btn.active:hover,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:hover{
+	border-color: #27aae1;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn:before,
+.contact-page-form .general-inquiry .general-inquiry-btn:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 8px;
+	margin-top: -3px;
+	top: 50%;
+	right: 20px;
+	background-color: #ccc;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.contact-page-form .general-inquiry .general-inquiry-btn:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 8px;
+	margin-top: -3px;
+	top: 50%;
+	background-color: #ccc;
+	right: 15px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.contact-page-form .general-inquiry .general-inquiry-btn:hover:before,
+.contact-page-form .general-inquiry .general-inquiry-btn:hover:after{
+	background-color: #27aae1; 
+}
+.contact-page-form .general-inquiry .general-inquiry-btn.active:before,
+.contact-page-form .general-inquiry .general-inquiry-btn.active:after,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:after,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:before{
+	background-color: #8fd442;
+}
+.contact-page-form .general-inquiry .general-inquiry-btn.active:hover:before,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:hover:after,
+.contact-page-form .general-inquiry .general-inquiry-btn.active:hover:after,
+.contact-page-form .general-inquiry .general-inquiry-btn.selected:hover:before{
+	background-color: #27aae1;
+}
+.contact-page-form .general-inquiry .general-inquiry-block{
+	background-color: #f8f8f8;
+	border: 1px solid #ccccdc;
+	border-radius: 3px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	position: absolute;
+	top: 65px;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.contact-page-form .general-inquiry .general-inquiry-block.open{
+	top: 42px;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.contact-page-form .general-inquiry .general-inquiry-block ul li{
+	border-bottom: 1px solid #187ba4;
+}
+.contact-page-form .general-inquiry .general-inquiry-block ul li:last-child{
+	border-bottom: none;
+}
+.contact-page-form .general-inquiry .general-inquiry-block ul a{
+	display: block;
+	background-color: #27aae1;
+	color: #fff;
+	padding: 7px 12px 7px 30px;
+	font-size: 14px;
+	line-height: 18px;
+	position: relative;
+}
+.contact-page-form .general-inquiry .general-inquiry-block ul a:before{
+	content: '';
+	display: block;
+	height: 6px;
+	width: 6px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	margin-top: -3px;
+}
+.contact-page-form .general-inquiry .general-inquiry-block ul a:hover{
+	background-color: #8fd442;
+}
+.contact-page-form textarea{
+	display: block;
+	border-radius: 3px;
+	border: 1px solid #eee;
+	width: 100%;
+	height: 108px;
+	background-color: transparent;
+	padding: 7px 40px 7px 12px;
+	resize: none;
+	line-height: 18px;
+	font-size: 14px;
+	text-transform: capitalize;
+	position: relative;
+}
+.contact-page-form button[type="submit"]{
+	display: block;
+	width: 100%;
+	margin: 0;
+	font: normal 14px/17px "ralewaybold", Arial, Helvetica, sans-serif;
+	border: 1px solid #27aae1;
+	background-color: #27aae1;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 12px 9px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.contact-page-form button[type="submit"]:hover{
+	box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* Sprite Start */
+.contact-page-form .row span strong{
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -8px;
+	height: 16px;
+	width: 25px;
+	background-image: url("../../Images/sprite.png");
+	background-repeat: no-repeat;
+}
+.contact-page-form .row span strong.message-icon{
+	top: 10px;
+	margin-top: 0;
+}
+.contact-page-form .row span .input-field:focus,
+.contact-page-form .row span .input-field.valid{
+	border-color: #8fd442;
+}
+.contact-page-form .row span .input-field.error{
+	border-color: #d40a5c;
+}
+.contact-page-form .row span .input-field:hover{
+	border-color: #27aae1;
+}
+.contact-page-form .row span label.error {
+	pointer-events: none;
+	background: #D40A5C;
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	white-space: nowrap;
+	padding: 4px 10px 6px;
+	position: absolute;
+	top: -33px;
+	right: 15px;;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	border-color: #D40A5C;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.contact-page-form .right-filed label.error {
+	right: 0;
+}
+.contact-page-form .row span .textarea label.error {
+	top: 0;
+	right: 0;
+}
+.contact-page-form .row span label.error:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #d40a5b transparent transparent transparent;
+	line-height: 0px;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+}
+/* Sprite Normal Start */
+.contact-page-form .row span #user-name+strong{
+	background-position: -167px -2px;
+}
+.contact-page-form .row span #email+strong{
+	background-position: -168px -74px;
+	width: 18px;
+}
+.contact-page-form .row span #subject+strong{
+	background-position: -171px -258px;
+	width: 18px;
+}
+.contact-page-form .row span #message+strong{
+	background-position: -170px -298px;
+	width: 18px;
+}
+.contact-page-form .row span #phone+strong{
+	background-position: -171px -182px;
+	width: 18px;
+}
+/* Sprite Normal End */
+
+/* Sprite Error Start */
+.contact-page-form .row span #user-name.error+label+strong,
+.contact-page-form .row span #user-name.error:focus+label+strong{
+	background-position: -217px -2px;
+}
+.contact-page-form .row span #general-inquiry.error+label+strong,
+.contact-page-form .row span #general-inquiry.error:focus+label+strong{
+	background-position: -220px -217px;
+	width: 18px;
+}
+.contact-page-form .row span #email.error+label+strong,
+.contact-page-form .row span #email.error:focus+label+strong{
+	background-position: -218px -74px;
+	width: 18px;
+}
+.contact-page-form .row span #subject.error+label+strong,
+.contact-page-form .row span #subject.error:focus+label+strong{
+	background-position: -221px -258px;
+	width: 18px;
+}
+.contact-page-form .row span #message.error+label+strong,
+.contact-page-form .row span #message.error:focus+label+strong{
+	background-position: -220px -298px;
+	width: 18px;
+}
+.contact-page-form .row span #phone.error+label+strong,
+.contact-page-form .row span #phone.error:focus+label+strong{
+	background-position: -221px -182px;
+	width: 18px;
+}
+/* Sprite Error End */
+
+/* Sprite Valid & Focus Start */
+.contact-page-form .row span #user-name.valid+strong,
+.contact-page-form .row span #user-name.valid+label+strong,
+.contact-page-form .row span #user-name:focus+strong,
+.contact-page-form .row span #user-name:focus+label+strong{
+	background-position: -267px -2px;
+}
+.contact-page-form .row span #general-inquiry.valid+strong,
+.contact-page-form .row span #general-inquiry.valid+label+strong,
+.contact-page-form .row span #general-inquiry:focus+strong,
+.contact-page-form .row span #general-inquiry:focus+label+strong{
+	background-position: -270px -217px;
+	width: 18px;
+}
+.contact-page-form .row span #email.valid+strong,
+.contact-page-form .row span #email.valid+label+strong,
+.contact-page-form .row span #email:focus+strong,
+.contact-page-form .row span #email:focus+label+strong{
+	background-position: -268px -74px;
+	width: 18px;
+}
+.contact-page-form .row span #subject.valid+strong,
+.contact-page-form .row span #subject.valid+label+strong,
+.contact-page-form .row span #subject:focus+strong,
+.contact-page-form .row span #subject:focus+label+strong{
+	background-position: -271px -258px;
+	width: 18px;
+}
+.contact-page-form .row span #message.valid+strong,
+.contact-page-form .row span #message.valid+label+strong,
+.contact-page-form .row span #message:focus+strong,
+.contact-page-form .row span #message:focus+label+strong{
+	background-position: -270px -298px;
+	width: 18px;
+}
+.contact-page-form .row span #phone.valid+strong,
+.contact-page-form .row span #phone.valid+label+strong,
+.contact-page-form .row span #phone:focus+strong,
+.contact-page-form .row span #phone:focus+label+strong{
+	background-position: -271px -182px;
+	width: 18px;
+}
+/* Sprite Valid & Focus End */
+
+/* Sprite Hover Start */
+.contact-page-form .row span #user-name:hover+strong,
+.contact-page-form .row span #user-name:hover+label+strong,
+.contact-page-form .row span #user-name.error:hover+strong,
+.contact-page-form .row span #user-name.error:hover+label+strong,
+.contact-page-form .row span #user-name.valid:hover+strong,
+.contact-page-form .row span #user-name.valid:hover+label+strong,
+.contact-page-form .row span #user-name:focus:hover+strong,
+.contact-page-form .row span #user-name:focus:hover+label+strong{
+	background-position: -317px -2px;
+}
+.contact-page-form .row span #general-inquiry:hover+strong,
+.contact-page-form .row span #general-inquiry:hover+label+strong,
+.contact-page-form .row span #general-inquiry.error:hover+strong,
+.contact-page-form .row span #general-inquiry.error:hover+label+strong,
+.contact-page-form .row span #general-inquiry.valid:hover+strong,
+.contact-page-form .row span #general-inquiry.valid:hover+label+strong,
+.contact-page-form .row span #general-inquiry:focus:hover+strong,
+.contact-page-form .row span #general-inquiry:focus:hover+label+strong{
+	background-position: -320px -217px;
+	width: 18px;
+}
+.contact-page-form .row span #email:hover+strong,
+.contact-page-form .row span #email:hover+label+strong,
+.contact-page-form .row span #email.error:hover+strong,
+.contact-page-form .row span #email.error:hover+label+strong,
+.contact-page-form .row span #email.valid:hover+strong,
+.contact-page-form .row span #email.valid:hover+label+strong,
+.contact-page-form .row span #email:focus:hover+strong,
+.contact-page-form .row span #email:focus:hover+label+strong{
+	background-position: -318px -74px;
+	width: 18px;
+}
+.contact-page-form .row span #subject:hover+strong,
+.contact-page-form .row span #subject:hover+label+strong,
+.contact-page-form .row span #subject.error:hover+strong,
+.contact-page-form .row span #subject.error:hover+label+strong,
+.contact-page-form .row span #subject.valid:hover+strong,
+.contact-page-form .row span #subject.valid:hover+label+strong,
+.contact-page-form .row span #subject:focus:hover+strong,
+.contact-page-form .row span #subject:focus:hover+label+strong{
+	background-position: -321px -258px;
+	width: 18px;
+}
+.contact-page-form .row span #message:hover+strong,
+.contact-page-form .row span #message:hover+label+strong,
+.contact-page-form .row span #message.error:hover+strong,
+.contact-page-form .row span #message.error:hover+label+strong,
+.contact-page-form .row span #message.valid:hover+strong,
+.contact-page-form .row span #message.valid:hover+label+strong,
+.contact-page-form .row span #message:focus:hover+strong,
+.contact-page-form .row span #message:focus:hover+label+strong{
+	background-position: -320px -298px;
+	width: 18px;
+}
+.contact-page-form .row span #phone:hover+strong,
+.contact-page-form .row span #phone:hover+label+strong,
+.contact-page-form .row span #phone.error:hover+strong,
+.contact-page-form .row span #phone.error:hover+label+strong,
+.contact-page-form .row span #phone.valid:hover+strong,
+.contact-page-form .row span #phone.valid:hover+label+strong,
+.contact-page-form .row span #phone:focus:hover+strong,
+.contact-page-form .row span #phone:focus:hover+label+strong{
+	background-position: -321px -182px;
+	width: 18px;
+}
+/* Sprite Hover End */
+/* Sprite End */
+/* Input Fields End */
+
+.contact-page-form p{
+	font: normal 13px/17px "ralewaymedium", Arial, Helvetica, sans-serif;
+	color: #888;
+	text-align: center;
+	margin: 0;}
+	.contact-page-form p span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.contact-page-form p a{
+		color: #79ba30;
+		font: normal 14px/17px "ralewaymedium", Arial, Helvetica, sans-serif;
+		text-decoration: underline;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	.contact-page-form p a:hover{
+		color: #27aae1;
+		text-decoration: none;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	.robot-img{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+	.contact-info-block{
+		margin: 50px 0 0;
+	}
+	.contact-info-block ul{
+		text-align: center;
+		font-size: 0;
+	}
+	.contact-info-block ul li{
+		display: inline-block;
+		vertical-align: top;
+		margin:  0 0 0 3.5%;
+		position: relative;
+		padding: 100px 20px 0;
+		font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
+		color: #000;
+		width: 31%;
+		min-height: 145px;
+		border-radius: 3px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+	}
+	.contact-info-block ul li:hover{
+		box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		transition: all 1s;
+	}
+	.contact-info-block ul li:hover a{
+		color: #27aae1;
+	}
+	.contact-info-block ul li:first-child{
+		margin: 0;
+	}
+	.contact-info-block ul li::before{
+		content: '';
+		display: block;
+		height: 74px;
+		width: 74px;
+		top: 15px;
+		left: 50%;
+		position: absolute;
+		margin: 0 0 0 -37px;
+		background-image: url("../../Images/sprite.png");
+		background-repeat: no-repeat;
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		transition: all 1s;
+	}
+	.contact-info-block ul li:hover:before{
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		transition: all 1s;
+	}
+	.contact-info-block ul li.location-block:before{
+		background-position: -991px -8px;
+	}
+	.contact-info-block ul li.call-block:before{
+		background-position: -1141px -8px;
+	}
+	.contact-info-block ul li.email-block:before{
+		background-position: -1290px -8px;
+	}
+	.contact-info-block ul li.location-block:hover:before{
+		background-position: -991px -128px;
+	}
+	.contact-info-block ul li.call-block:hover:before{
+		background-position: -1141px -128px;
+	}
+	.contact-info-block ul li.email-block:hover:before{
+		background-position: -1290px -128px;
+	}
+	.contact-info-block ul a,
+	.contact-info-block ul li span{
+		display: block;
+		color: #666;
+	}

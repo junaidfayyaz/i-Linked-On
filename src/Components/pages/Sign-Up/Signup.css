@@ -1,0 +1,673 @@
+.err{
+	color: red !important;
+}
+
+#signin-page .signin-form .row span:hover label,
+#signup-page .signup-form .columns-row .row span:hover label{
+	display: none;
+}
+#signin-page .ilinkedon-logo-custom,
+#signup-page .ilinkedon-logo-custom{
+	position: absolute;
+	bottom: 25px;
+	left: -308px;
+	z-index: -1;
+	height: 130px;
+	width: 650px;
+	background-image: url("../../Images/gray-logo.svg");
+	background-position: 0 bottom;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+#signin-page:hover .ilinkedon-logo-custom,
+#signup-page:hover .ilinkedon-logo-custom{
+	background-image: url("../../Images/gray-logo-hover.svg");
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+#signup-page{
+	background-color: #fff;
+	padding: 60px 0 70px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	z-index: 0;
+	font: normal 16px/20px "ralewayregular", Arial, Helvetica, sans-serif;
+}
+#signup-page:before{
+	content: '';
+	position: absolute;
+	background-color: rgba(255,255,255,0.3);
+	z-index: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#signup-page .holder{
+	max-width: 975px;	
+}
+#signup-page .signup-form-holder{
+	overflow: hidden;
+	position: relative;
+	padding: 25px 40px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+#signup-page .custom-heading{
+	padding: 0 0 30px;
+	margin: 0 0 30px;
+	position: relative;
+}
+#signup-page .custom-heading:before{
+	content: '';
+	display: block;
+	height: 1px;
+	position: absolute;
+	width: 570px;
+	left: 50%;
+	background-color: #e5e5e5;
+	margin-left: -285px;
+	bottom: 0;
+}
+#signup-page .custom-heading h2{
+	font: normal 30px/33px "ralewaymedium", Arial, Helvetica, sans-serif;
+	color: #116198;
+	margin: 0;
+	padding: 0 80px;
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+}
+#signup-page .custom-heading h2:before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 3px;
+	position: absolute;
+	background-color: #116198;
+	margin: -1px;
+	top: 50%;
+	left: 0;
+}
+#signup-page .custom-heading h2:after{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 3px;
+	position: absolute;
+	background-color: #116198;
+	margin: -1px;
+	top: 50%;
+	left: auto;
+	right: 0;
+}
+.signup-form{
+	position: relative;
+	z-index: 99;
+}
+.signup-form:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.signup-form .columns{
+	float: left;
+	width: 50%;
+	padding: 0 0 0 20px;
+}
+.signup-form .columns:first-child{
+	padding: 0;
+}
+.signup-form .row:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.signup-form .row{
+	margin: 0 0 15px;
+}
+.signup-form .columns-row .row{
+	margin: 0 0 28px;
+}
+.signup-form .columns-row .row label{
+	display: block;
+	/* color: #fff; */
+	font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
+	text-align: center;
+	/* display: none; */
+	/* background-color: #79ba30; */
+	position: absolute;
+	z-index: 9;
+	margin: 0 0 5px;
+}
+.signup-form .columns-row .row span{
+	display: block;
+	background-color: #f8f8f8;
+	text-align: left;
+	position: relative;
+}
+.signup-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #666;
+	opacity: 0.3;
+}
+.signup-form .row span input[type="text"],
+.signup-form .row span input[type="email"],
+.signup-form .row span input[type="password"]{
+	display: block;
+	border: 1px solid #eee;
+	font-size: 14px;
+	line-height: 18px;
+	color: #666;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right 11px;
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	padding: 7px 40px 7px 12px;
+}
+.signup-form .row #phone{
+	overflow: hidden;
+	background-color: #fff;
+}
+.signup-form .row #phone input{
+	float: left;
+	padding: 7px 10px;
+	background-color: #f8f8f8;
+}
+.signup-form .row #phone .custom-code{
+	width: 24%;
+}
+.signup-form .row #phone .custom-network{
+	width: 24%;
+	margin-left: 1%;
+}
+.signup-form .row #phone .custom-number{
+	width: 50%;
+	margin-left: 1%;
+}
+.signup-form .row #phone input:focus,
+.signup-form .row #phone input.valid{
+	border-color: #8fd442;
+}
+.signup-form .row #phone input:hover{
+	border-color: #27aae1;
+}
+.signup-form .row .phone:hover #phone+strong{
+	background-position: -171px -182px;
+}
+.signup-form .row span #phone.input-focused+strong{
+	background-position: -271px -182px;
+}
+.signup-form .row span #phone.input-hover:hover+strong{
+	background-position: -321px -182px;
+}
+.signup-form p{
+	color: #888;
+	font: normal 13px/17px "ralewaymedium", Arial, Helvetica, sans-serif;
+	margin: 0;
+	text-align: left;
+}
+.signup-form p span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.signup-form p span.ilinkedon-logo-small{
+	margin: 0 3px 8px;
+}
+.signup-form p a{
+	color: #79ba30;
+	font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.signup-form p.center-align a{
+	font: normal 14px/17px "ralewaysemibold", Arial, Helvetica, sans-serif;
+}
+.signup-form p a:hover{
+	color: #27aae1;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.signup-form button[type="submit"]{
+	display: block;
+	width: 100%;
+	margin: 0;
+	font: normal 16px/19px "ralewaybold", Arial, Helvetica, sans-serif;
+	border: 1px solid #27aae1;
+	background-color: #27aae1;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 12px 9px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.signup-form button[type="submit"]:hover{
+	box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.signup-form .center-align{
+	text-align: center;
+	font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
+	color: #666;
+}
+.signup-form .other-signin{
+	max-width: 780px;
+	margin: 20px auto;
+}
+.signup-form .other-signin:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.signup-form .other-signin li{
+	width: 48%;
+}
+.signup-form .other-signin li.sign-in-facebook{
+	float: left;
+}
+.signup-form .other-signin li.sign-in-linkedin{
+	float: right;
+}
+.signup-form .other-signin a{
+	display: block;
+	font: normal 14px/15px "ralewaymedium", Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 14px 20px;
+	position: relative;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.signup-form .other-signin li.sign-in-facebook a{
+	background-color: #4463a7;
+	border: 1px solid #4463a7;
+}
+.signup-form .other-signin li.sign-in-linkedin a{
+	background-color: #0274b3;
+	border: 1px solid #0274b3;
+}
+.signup-form .other-signin li.sign-in-facebook a:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+}
+.signup-form .other-signin li.sign-in-linkedin a:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+}
+.signup-form .other-signin a:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	margin: -8px 0 0;
+	font-family: "icomoon";
+	font-size: 16px;
+	line-height: 16px;
+}
+.signup-form .other-signin li.sign-in-facebook a:before{
+	content: '\ea90';
+}
+.signup-form .other-signin li.sign-in-linkedin a:before{
+	content: '\eaca';
+}
+.signup-form .other-signin a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 55px;
+	width: 1px;
+	background-color: rgba(0,0,0,0.3);
+}
+.signup-form .other-signin a:hover:after{
+	background-color: rgba(0,0,0,0.3);
+}
+#signup-page > .ilinkedon-logo-custom{
+	bottom: 4px;
+}
+#signup-page > .ilinkedon-logo-custom.left{
+	left: -310px;
+}
+#signup-page > .ilinkedon-logo-custom.right{
+	left: auto;
+	right: -290px;
+}
+.signup-form .agreement-text{
+	color: #7abb31;
+	font: normal 14px/15px "ralewaymedium", Arial, Helvetica, sans-serif;
+}
+.agreement-checkbox{
+	display: inline-block;
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	border: 1px solid #27aae1;
+	border-radius: 2px;
+	margin: 0 4px 1px 0;
+	position: relative;
+	text-align: center;
+	color: #79ba30 !important;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.agreement-checkbox:before{
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 18px;
+	color: transparent;
+	text-align: center;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.agreement-checkbox.true:before{
+	content: '\2714';
+	color: #79ba30 !important;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+}
+.agreement-checkbox input[type="checkbox"]{
+	display: none;
+}
+.signup-form label.error {
+	background: #D40A5C;
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	white-space: nowrap;
+	padding: 4px 10px 6px;
+	position: absolute;
+	top: -36px;
+	right: 15px;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	border-color: #D40A5C;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.signup-form label.error::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #d40a5b transparent transparent transparent;
+	line-height: 0px;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+}
+
+.signup-form .row span strong{
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -8px;
+	height: 16px;
+	width: 25px;
+	/* background-image: url("../../Images/sprite.png"); */
+	background-repeat: no-repeat;
+}
+.signup-form .row span .input-field:focus,
+.signup-form .row span .input-field.valid{
+	border-color: #8fd442;
+}
+.signup-form .row span .input-field.error{
+	border-color: #d40a5c;
+}
+.signup-form .row span .input-field:hover{
+	border-color: #27aae1;
+}
+.signup-form .row span label.error {
+	background: #D40A5C;
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	white-space: nowrap;
+	padding: 4px 10px 6px;
+	position: absolute;
+	top: -33px;
+	right: 15px;;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	border-color: #D40A5C;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.signup-form .right-filed label.error {
+	right: 0;
+}
+.signup-form .row span .textarea label.error {
+	top: 0;
+	right: 0;
+}
+.signup-form .row span label.error:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #d40a5b transparent transparent transparent;
+	line-height: 0px;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+}
+/* Sprite Normal Start */
+.signup-form .row span #fname+strong{
+	background-position: -167px -2px;
+}
+.signup-form .row span #lname+strong{
+	background-position: -167px -34px;
+}
+.signup-form .row span #email+strong{
+	background-position: -168px -74px;
+	width: 18px;
+}
+.signup-form .row span #password+strong{
+	background-position: -169px -110px;
+	width: 18px;
+}
+.signup-form .row span #confirm-password+strong{
+	background-position: -171px -147px;
+	width: 18px;
+}
+.signup-form .row span #phone+strong{
+	background-position: -171px -182px;
+	width: 18px;
+}
+/* Sprite Normal End */
+
+/* Sprite Error Start */
+.signup-form .row span #fname.error+label+strong,
+.signup-form .row span #fname.error:focus+label+strong{
+	background-position: -217px -2px;
+}
+.signup-form .row span #lname.error+label+strong,
+.signup-form .row span #lname.error:focus+label+strong{
+	background-position: -217px -34px;
+}
+.signup-form .row span #email.error+label+strong,
+.signup-form .row span #email.error:focus+label+strong{
+	background-position: -218px -74px;
+	width: 18px;
+}
+.signup-form .row span #password.error+label+strong,
+.signup-form .row span #password.error:focus+label+strong{
+	background-position: -219px -110px;
+	width: 18px;
+}
+.signup-form .row span #confirm-password.error+label+strong,
+.signup-form .row span #confirm-password.error:focus+label+strong{
+	background-position: -221px -147px;
+	width: 18px;
+}
+.signup-form .row span #phone.error+label+strong,
+.signup-form .row span #phone.error:focus+label+strong{
+	background-position: -221px -182px;
+	width: 18px;
+}
+/* Sprite Error End */
+
+/* Sprite Valid & Focus Start */
+.signup-form .row span #fname.valid+strong,
+.signup-form .row span #fname.valid+label+strong,
+.signup-form .row span #fname:focus+strong,
+.signup-form .row span #fname:focus+label+strong{
+	background-position: -267px -2px;
+}
+.signup-form .row span #lname.valid+strong,
+.signup-form .row span #lname.valid+label+strong,
+.signup-form .row span #lname:focus+strong,
+.signup-form .row span #lname:focus+label+strong{
+	background-position: -267px -34px;
+}
+.signup-form .row span #email.valid+strong,
+.signup-form .row span #email.valid+label+strong,
+.signup-form .row span #email:focus+strong,
+.signup-form .row span #email:focus+label+strong{
+	background-position: -268px -74px;
+	width: 18px;
+}
+.signup-form .row span #password.valid+strong,
+.signup-form .row span #password.valid+label+strong,
+.signup-form .row span #password:focus+strong,
+.signup-form .row span #password:focus+label+strong{
+	background-position: -269px -110px;
+	width: 18px;
+}
+.signup-form .row span #confirm-password.valid+strong,
+.signup-form .row span #confirm-password.valid+label+strong,
+.signup-form .row span #confirm-password:focus+strong,
+.signup-form .row span #confirm-password:focus+label+strong{
+	background-position: -271px -147px;
+	width: 18px;
+}
+.signup-form .row span #phone.valid+strong,
+.signup-form .row span #phone.valid+label+strong,
+.signup-form .row span #phone:focus+strong,
+.signup-form .row span #phone:focus+label+strong{
+	background-position: -271px -182px;
+	width: 18px;
+}
+/* Sprite Valid & Focus End */
+
+/* Sprite Hover Start */
+.signup-form .row span #fname:hover+strong,
+.signup-form .row span #fname:hover+label+strong,
+.signup-form .row span #fname.error:hover+strong,
+.signup-form .row span #fname.error:hover+label+strong,
+.signup-form .row span #fname.valid:hover+strong,
+.signup-form .row span #fname.valid:hover+label+strong,
+.signup-form .row span #fname:focus:hover+strong,
+.signup-form .row span #fname:focus:hover+label+strong{
+	background-position: -317px -2px;
+}
+.signup-form .row span #lname:hover+strong,
+.signup-form .row span #lname:hover+label+strong,
+.signup-form .row span #lname.error:hover+strong,
+.signup-form .row span #lname.error:hover+label+strong,
+.signup-form .row span #lname.valid:hover+strong,
+.signup-form .row span #lname.valid:hover+label+strong,
+.signup-form .row span #lname:focus:hover+strong,
+.signup-form .row span #lname:focus:hover+label+strong{
+	background-position: -317px -34px;
+}
+.signup-form .row span #email:hover+strong,
+.signup-form .row span #email:hover+label+strong,
+.signup-form .row span #email.error:hover+strong,
+.signup-form .row span #email.error:hover+label+strong,
+.signup-form .row span #email.valid:hover+strong,
+.signup-form .row span #email.valid:hover+label+strong,
+.signup-form .row span #email:focus:hover+strong,
+.signup-form .row span #email:focus:hover+label+strong{
+	background-position: -318px -74px;
+	width: 18px;
+}
+.signup-form .row span #password:hover+strong,
+.signup-form .row span #password:hover+label+strong,
+.signup-form .row span #password.error:hover+strong,
+.signup-form .row span #password.error:hover+label+strong,
+.signup-form .row span #password.valid:hover+strong,
+.signup-form .row span #password.valid:hover+label+strong,
+.signup-form .row span #password:focus:hover+strong,
+.signup-form .row span #password:focus:hover+label+strong{
+	background-position: -319px -110px;
+	width: 18px;
+}
+.signup-form .row span #confirm-password:hover+strong,
+.signup-form .row span #confirm-password:hover+label+strong,
+.signup-form .row span #confirm-password.error:hover+strong,
+.signup-form .row span #confirm-password.error:hover+label+strong,
+.signup-form .row span #confirm-password.valid:hover+strong,
+.signup-form .row span #confirm-password.valid:hover+label+strong,
+.signup-form .row span #confirm-password:focus:hover+strong,
+.signup-form .row span #confirm-password:focus:hover+label+strong{
+	background-position: -321px -147px;
+	width: 18px;
+}
+.signup-form .row span #phone:hover+strong,
+.signup-form .row span #phone:hover+label+strong,
+.signup-form .row span #phone.error:hover+strong,
+.signup-form .row span #phone.error:hover+label+strong,
+.signup-form .row span #phone.valid:hover+strong,
+.signup-form .row span #phone.valid:hover+label+strong,
+.signup-form .row span #phone:focus:hover+strong,
+.signup-form .row span #phone:focus:hover+label+strong{
+	background-position: -321px -182px;
+	width: 18px;
+}
+/* Sprite Hover End */
+/* Sprite End */
+/* Input Fields End */
+/*signup page end*/
