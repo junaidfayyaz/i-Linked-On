@@ -3,6 +3,7 @@ import qrcode from "../../Images/qr-code.png"
 import playstore from "../../Images/play-store-img.png";
 import appstore from "../../Images/app-store-img.png";
 import "./getapp.css"
+import'lazysizes';
 const GetApp = () => {
   return (
     <div><section id="get-app-section">
@@ -19,15 +20,15 @@ const GetApp = () => {
                 </p>
                 <div class="get-app-contents">
                     <div class="qr-code-holder">
-                        <img src={qrcode} alt="Quick Response Code of iLinkedon"/>
+                        <img src={qrcode} alt="Quick Response Code of iLinkedon" className="lazyload" data-sizes="auto"/>
                     </div>
                     <h5>Download our app with QR Code</h5>
                     <ul class="download-buttons">
                         <li class="play-store-btn">
-                            <a href="#"><img src={playstore} alt="Play store btn"/></a>
+                            <a href="#"><img src={playstore} alt="Play store btn" className="lazyload" data-sizes="auto"/></a>
                         </li>
                         <li class="app-store-btn">
-                            <a href="#"><img src={appstore} alt="App store btn"/></a>
+                            <a href="#"><img src={appstore} alt="App store btn" className="lazyload" data-sizes="auto"/></a>
                         </li>
                     </ul>
                 </div>

@@ -136,7 +136,7 @@ const Signup = () => {
                         {/* <input className="input-field" placeholder="Email" type="email" name="email" id="email" required /> */}
                         <Field
                                 className="input-field"
-                                placeholder="meharjunadi950@gmail.com"
+                                placeholder="meharjunaid950@gmail.com"
                                 type="email"
                                 id="email"
                                 name="email"
@@ -209,7 +209,7 @@ const Signup = () => {
                 <button type="submit">Sign Up</button>
               </div>
               <div className="row">
-                <p className="center-align">How you works iLinkedOn? <a href="signin.php">Sign in</a></p>
+                <p className="center-align">How you works iLinkedOn? <a>Sign in</a></p>
               </div>
               <div className="row">
                 <ul className="other-signin">

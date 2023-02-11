@@ -3,6 +3,7 @@ import "./footer.css";
 import map from "../../Images/mapimg.png";
 import first from "../../Images/250-250.png";
 import { Link } from "react-router-dom";
+import "lazysizes";
 const Footer = () => {
   return (
     <div>
@@ -100,7 +101,7 @@ const Footer = () => {
             <div class="contact-info-holder">
               <div class="map">
                 <a target="_blank" href="https://goo.gl/maps/5hFikXWZwHvrK8WB9">
-                  <img src={map} alt="Lahore Map" />
+                  <img src={map} alt="Lahore Map" className="lazyload" data-sizes="auto" />
                 </a>
                 {/* <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.8918661471166!2d74.41508891500968!3d31.582013051255824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391910054aa98b89%3A0xed7029242a279ba9!2sSalamatpura%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1663602002715!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
               </div>

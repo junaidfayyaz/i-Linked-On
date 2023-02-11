@@ -1,4 +1,25 @@
-
+#contact-page {
+	background-image: url("../../Images/join-now-form.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	padding: 60px 0;
+	color: #fff;
+	z-index: 0;
+	font: normal 16px/20px "ralewayregular", Arial, Helvetica, sans-serif;
+  }
+  #contact-page:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	z-index: -1;
+  }
 /*contact-us-page start*/
 #contact-page .contact-page-form .row span:hover label{
 	display: none !important;
@@ -128,10 +149,10 @@
 }
 .contact-page-form .columns .row label{
 	display: block;
-	color: #fff;
+	/* color: #fff; */
 	font: normal 14px/17px "ralewayregular", Arial, Helvetica, sans-serif;
 	text-align: left;
-	display: none;
+	/* display: none; */
 	z-index: 9;
 	position: absolute;
 	margin: 0 0 5px;
@@ -292,7 +313,7 @@
 .contact-page-form .general-inquiry .general-inquiry-block ul a:hover{
 	background-color: #8fd442;
 }
-.contact-page-form textarea{
+.contact-page-form .input-field{
 	display: block;
 	border-radius: 3px;
 	border: 1px solid #eee;
@@ -384,7 +405,7 @@
 .contact-page-form .right-filed label.error {
 	right: 0;
 }
-.contact-page-form .row span .textarea label.error {
+.contact-page-form .row span .input-field label.error {
 	top: 0;
 	right: 0;
 }
@@ -615,7 +636,7 @@
 		width: 31%;
 		min-height: 145px;
 		border-radius: 3px;
-		box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		box-shadow: 0 0 15px rgb(0 0 0);
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;

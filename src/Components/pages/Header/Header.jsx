@@ -3,6 +3,7 @@ import "./header.css";
 import img1 from "../../Images/pak-flag.png";
 import logo1 from "../../Images/logo.svg";
 import { Link } from "react-router-dom";
+import "lazysizes";
 const Header = () => {
   return (
     <header id="header">
@@ -73,7 +74,7 @@ const Header = () => {
             </ul>
             <ul class="location-holder">
               <li>
-                <img src={img1} alt="Pakistan Flag Image" />
+                <img src={img1} alt="Pakistan Flag Image" className="lazyload" data-sizes="auto" />
                 <span>Pakistan</span>
               </li>
               <li>Lahore</li>
@@ -95,7 +96,7 @@ const Header = () => {
               </div>
               <div class="logo">
                 <a href="#">
-                  <img src={logo1} className="logo1" alt="ILinkedon" to='/' />
+                  <img src={logo1} className="logo1 lazyload" alt="ILinkedon" to='/' data-sizes="auto" />
                 </a>
               </div>
             </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import './move.css'
 import business from "../../Images/business-image.png";
 import social from "../../Images/social-image.png";
+import 'lazysizes';
+
 const Move = () => {
   return (
     <div>
@@ -17,7 +19,7 @@ const Move = () => {
             <div class="columns">
               <h5>iLinkedOn- Think-Tank</h5>
               <div class="image-holder">
-                <img src={business} alt="Business Idea’s Image" />
+                <img src={business} alt="Business Idea’s Image" className="lazyload" data-sizes="auto" />
               </div>
               <div class="image-content">
                 <p>
@@ -34,7 +36,7 @@ const Move = () => {
             <div class="columns">
               <h5>iLinkedOn- Share your love</h5>
               <div class="image-holder">
-                <img src={social} alt="Socialize Image" />
+                <img src={social} alt="Socialize Image" className="lazyload" data-sizes="auto" />
               </div>
               <div class="image-content">
                 <p>

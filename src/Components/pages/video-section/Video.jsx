@@ -1,5 +1,7 @@
+import 'lazysizes';
 import React from 'react'
 import './Video.css'
+
 const Video = () => {
   return (
     <div>
@@ -28,10 +30,12 @@ const Video = () => {
           <div class="section1-video">
             <span class="ilinkedon-logo-large"></span>
             <iframe
+            className="lazyload" data-sizes="auto"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/NVPxmz_PvUw"
               allowfullscreen=""
+              title='yt'
             ></iframe>
           </div>
         </div>

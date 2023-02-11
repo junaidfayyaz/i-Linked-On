@@ -1,6 +1,7 @@
 import React from "react";
 import "./booking.css";
 import slideimg from "../../Images/slide-img1.png";
+import "lazysizes";
 const Booking = () => {
   return (
     <div>
@@ -30,7 +31,7 @@ const Booking = () => {
                           </a>
                         </div>
                         <div class="image-holder">
-                          <img src={slideimg} alt="Slider Image 2" />
+                          <img src={slideimg} alt="Slider Image 2" className="lazyload" data-sizes="auto" />
                         </div>
                       </div>
                     </div>
@@ -52,7 +53,7 @@ const Booking = () => {
                           </a>
                         </div>
                         <div class="image-holder">
-                          <img src={slideimg} alt="Slider Image 1" />
+                          <img src={slideimg} alt="Slider Image 1" className="lazyload" data-sizes="auto" />
                         </div>
                       </div>
                     </div>
@@ -74,7 +75,7 @@ const Booking = () => {
                           </a>
                         </div>
                         <div class="image-holder">
-                          <img src={slideimg} alt="Slider Image 2" />
+                          <img src={slideimg} alt="Slider Image 2" className="lazyload" data-sizes="auto" />
                         </div>
                       </div>
                     </div>
@@ -96,7 +97,7 @@ const Booking = () => {
                           </a>
                         </div>
                         <div class="image-holder">
-                          <img src={slideimg} alt="Slider Image 1" />
+                          <img src={slideimg} alt="Slider Image 1" className="lazyload" data-sizes="auto" />
                         </div>
                       </div>
                     </div>

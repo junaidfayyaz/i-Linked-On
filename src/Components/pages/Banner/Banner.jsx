@@ -2,6 +2,8 @@ import React from 'react'
 import './banner.css'
 import mainbanner from "../../Images/main-banner.jpg";
 import car from "../../Images/car.png"
+import 'lazysizes';
+// import a plugin
 // import googleplaybutton from "../../Images/google-play-btn.svg";
 // import appstorebtn from "../../Images/app-store-btn.svg";
 
@@ -20,7 +22,7 @@ const Banner = () => {
               </div>
             </li> */}
             <li aria-hidden="true">
-              <img src={mainbanner} alt="Banner" className="banner" />
+              <img src={mainbanner} alt="Banner" className="banner lazyload" data-sizes="auto"/>
               <div class="car loaded">
                 <img src={car} alt="Car" />
                 <span class="car-right-light"></span>
@@ -28,9 +30,9 @@ const Banner = () => {
               </div>
             </li>
             <li aria-hidden="true">
-              <img src={mainbanner} alt="Banner" className="banner" />
+              <img src={mainbanner} alt="Banner" className="banner lazyload" data-sizes="auto" />
               <div class="car loaded">
-                <img src={car} alt="Car" />
+                <img src={car} alt="Car" className="lazyload" data-sizes="auto"/>
                 <span class="car-right-light"></span>
                 <span class="car-left-light"></span>
               </div>

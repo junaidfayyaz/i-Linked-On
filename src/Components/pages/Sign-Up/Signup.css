@@ -28,6 +28,10 @@
 	transition: all 1s;
 }
 #signup-page{
+	background-image: url("../../Images/join-now-form.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 	background-color: #fff;
 	padding: 60px 0 70px;
 	position: relative;
@@ -50,6 +54,8 @@
 	max-width: 975px;	
 }
 #signup-page .signup-form-holder{
+	background-color: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 40%);
 	overflow: hidden;
 	position: relative;
 	padding: 25px 40px;

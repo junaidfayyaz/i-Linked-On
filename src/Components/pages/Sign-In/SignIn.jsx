@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import 'lazysizes'
 const SignIn = () => {
   
   const validationSchema = yup.object({
@@ -92,13 +93,13 @@ const SignIn = () => {
       <div className="columns">
         <h2>ILINKEDON- THINK-TANK</h2>
         <div className="image-holder">
-          <img src={businessimg} alt="Business Image" />
+          <img src={businessimg} alt="Business Image" className="lazyload" data-sizes="auto"/>
         </div>
       </div>
       <div className="columns">
         <h2>ILINKEDON- SHARE YOUR LOVE</h2>
         <div className="image-holder">
-          <img src={socialimg} alt="Social Image" />
+          <img src={socialimg} alt="Social Image" className="lazyload" data-sizes="auto"/>
         </div>
       </div>
     </div>
@@ -113,7 +114,7 @@ const SignIn = () => {
               {/* <input className="input-field" placeholder="Email" defaultValue="demo@ilinkedon.com" type="email" name="email" id="email" required /> */}
               <Field
                                 className="input-field"
-                                placeholder="meharjunadi950@gmail.com"
+                                placeholder="meharjunaid950@gmail.com"
                                 type="email"
                                 id="email"
                                 name="email"
